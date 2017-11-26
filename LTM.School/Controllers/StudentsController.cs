@@ -22,6 +22,7 @@ namespace LTM.School.Controllers
         // GET: Students
         public async Task<IActionResult> Index()
         {
+            var dos =  _context.Students.ToListAsync();
             return View(await _context.Students.ToListAsync());
         }
 
