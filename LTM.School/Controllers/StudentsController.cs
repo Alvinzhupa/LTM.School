@@ -41,6 +41,8 @@ namespace LTM.School.Controllers
                 return NotFound();
             }
 
+            var d = 1;
+
             return View(student);
         }
 
