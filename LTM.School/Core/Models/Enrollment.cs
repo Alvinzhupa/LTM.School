@@ -9,10 +9,17 @@ namespace LTM.School.Core.Models
     public class Enrollment
     {
         public int EnrollmentId { get; set; }
-        public int StuentId { get; set; }
-        public int Course { get; set; }
 
-      
+        public int CourseId { get; set; }
+
+        public int StudentId { get; set; }
+
+        public CourseGrade? Grade { get; set; }
+
+
+        public Course Course { get; set; }
+
+        public Student Student { get; set; }
 
     }
 }
