@@ -26,13 +26,17 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a asp-area="" asp-controller="Home" asp-action="Index" class="navbar-brand">LTM.School</a>
+                <a asp-area="" asp-controller="Home" asp-action="Index" class="navbar-brand">我爱ABP管理系统</a>
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li><a asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
-                    <li><a asp-area="" asp-controller="Home" asp-action="About">About</a></li>
-                    <li><a asp-area="" asp-controller="Home" asp-action="Contact">Contact</a></li>
+                    <li><a asp-area="" asp-controller="Home" asp-action="Index">首页</a></li>
+                    <li><a asp-area="" asp-controller="Student" asp-action="Index">学生信息</a></li>
+                    <li><a asp-area="" asp-controller="Course" asp-action="Index">课程信息</a></li>
+                    <li><a asp-area="" asp-controller="Instructors" asp-action="Index">教师信息</a></li>
+                    <li><a asp-area="" asp-controller="Departments" asp-action="Index">部门管理</a></li>
+                    <li><a asp-area="" asp-controller="Home" asp-action="Index">关于本站</a></li>
+                    <li><a asp-area="" asp-controller="Home" asp-action="Index">联系我们</a></li>
                 </ul>
             </div>
         </div>
@@ -41,7 +45,7 @@
         @RenderBody()
         <hr />
         <footer>
-            <p>&copy; 2017 - LTM.School</p>
+            <p>&copy; @DateTime.Now.Year - 我爱ABP管理系统</p>
         </footer>
     </div>
 
