@@ -33,6 +33,7 @@ namespace LTM.School.Controllers
             {
                 return NotFound();
             }
+            //
 
             var student = await _context.Students
                 .SingleOrDefaultAsync(m => m.Id == id);
